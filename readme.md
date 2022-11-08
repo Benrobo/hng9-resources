@@ -154,3 +154,181 @@ This api works differently. what you need to do, is specify the `To` and `From` 
 // FROM=USD
 https://www.freeforexapi.com/api/live?pairs={TO}{FROM}
 ```
+
+## 4 Project 6 ( Engineering 360deg Skill Evaluator )
+Engineering Team 360° skill evaluator. This is for companies that want to know how good their engineers are. Engineers register and get various `multi-choice` `questions` on different `topics`. The tool builds a `profile` of each engineer in the form of a `spiderweb` `chart`, so the company knows where engineers need to `improve`.
+
+### Development Idea
+We could create a web app where each users ( companies staff ) could register. On registering, they are provided with a unique dashboard where all activities could be done. The companies has individual profiles. On registeting, the company could create a `SPACE` having :-
+    - Title
+    - Company name
+    - Company Slogan ( optional )
+Companies also has the functionality of adding different `Questions` in different `Categories` or `Topic` to this space created. Each questions has a unique time frame, so the comapany would be able to set each time interval it would take to finisha given questions. 
+
+Once done, they would be giving a unique `URL` in this format `https://multiplex.com/evaluate/:organization_id/space_id`
+
+Once the `reciepient` recieves this url and opens it up, he / she is asked to create a profile before answering the test. once the user is done. we store a token in the browser to identify the user. The user is then taken to the next screen of to complete the assessment specified by the organization. Once the user is done, we simply send the `passed` and `failed` questions based on each `categories` given to backend. On the backend, we store the users info and questions taken in reference with the organization `ID` and `SPACE ID`. This way, we would be able to relate each data from different table together.
+
+![image](https://cdn.dribbble.com/users/2211198/screenshots/10873243/media/8dfc8311fe654c02cb87c640b5331061.png?)
+
+```js
+// questions scores
+[
+    {
+        "categories" : "Health",
+        "passed" : 25,
+        "failed": 5,
+        "min": 0,
+        "max": 30
+    },
+    {
+        "categories" : "OOP",
+        "passed" : 28,
+        "failed": 2,
+        "min": 0,
+        "max": 30
+    },
+    {
+        "categories" : "React",
+        "passed" : 30,
+        "failed": 0,
+        "min": 0,
+        "max": 30
+    },
+]
+
+```
+
+Once candidate are done taking the questions, we simply compile the results and send them a mail telling them their result are available, with a link to view the result.
+
+based on the data, we can generate a `spider chart` or `Rader Chart` using [Chart.js Library](https://chartjs.com)
+
+![image](https://cdn.hashnode.com/res/hashnode/image/upload/v1610933120508/oEDyPtZ8I.png)
+
+With this data, organization could view each candidate result and see how well they did. The highest candidate would be ranked first.
+
+This web application is made up of different pages :
+
+#### Profile Page
+- Organization / Username
+- email
+- username
+- questions taken ( `candidates` )
+- space created (`organization`)
+
+![image](https://cdn.dribbble.com/users/5031392/screenshots/14980870/media/cdfad751274b44ceacaa2ac8ca2e9ed4.png)
+
+![image](https://cdn.dribbble.com/users/937198/screenshots/16171852/media/0d8a7b17962114d816b336601bfb95ed.png?)
+
+#### Space Creation Page ( visible to only organization)
+- space name
+- title
+- questions to include.
+
+etc...
+
+#### Candidate Page
+A page where they could manage all candidate who took the questions..
+
+### Technologies
+
+#### Frontend 
+- Reactjs
+- Tailwind Css
+- Chakra UI
+- ChartJS
+
+#### Backend 
+( API )
+- Nodejs + Expressjs
+- Typescript
+- Postgresql + Prisma / MongoDB
+- Mail Gun :- sending of mails
+
+Scrpting
+- Python
+- FastAPI
+
+#### Architecture
+We would be making use of the `Monolith` Architecture
+
+
+Third parties api for questions
+
+#### 1. General Trivia Questions
+
+[Trivial API](https://the-trivia-api.com/api/questions?limit=20)
+
+```js
+GET https://the-trivia-api.com/api/questions?limit=20
+```
+
+Response
+
+```json
+[
+  {
+    "category": "Society & Culture",
+    "id": "622a1c367cc59eab6f9500ff",
+    "correctAnswer": "Hermes",
+    "incorrectAnswers": [
+      "Apollo",
+      "Dionysus",
+      "Hades"
+    ],
+    "question": "Who is the Greek equivalent of the Roman god Mercury?",
+    "tags": [
+      "society_and_culture"
+    ],
+    "type": "Multiple Choice",
+    "difficulty": "hard",
+    "regions": [
+      
+    ]
+  },
+  ......
+]
+```
+
+Technical Questions ( Developer )
+
+```js
+GET https://quizapi.io/api/v1/questions?apiKey=mFjwtPODO2nHqQDsSdFGevJMuXgiVJ5HtphV3xGE
+```
+
+Response
+
+```json
+{
+    "id": 80,
+    "question": "How do you create an array in PHP?",
+    "description": null,
+    "answers": {
+      "answer_a": "$cars = \"Volvo\", \"BMW\", \"Toyota\";",
+      "answer_b": "$cars = newarray(\"Volvo\", \"BMW\", \"Toyota\");",
+      "answer_c": "$cars = array[\"Volvo\", \"BMW\", \"Toyota\"];",
+      "answer_d": "$cars = array(\"Volvo\", \"BMW\", \"Toyota\");",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_d",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "",
+    "difficulty": "Medium"
+},....
+```

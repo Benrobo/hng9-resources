@@ -6,6 +6,11 @@
 #     "location": "105.112.176.46"
 # }
 
-GET https://www.freeforexapi.com/api/live?pairs=USDNGN
+# GET https://www.freeforexapi.com/api/live?pairs=USDNGN
 
-Content-Type: application/json
+# Content-Type: application/json
+
+# GET https://the-trivia-api.com/api/questions?limit=20
+
+
+GET https://quizapi.io/api/v1/questions?apiKey=mFjwtPODO2nHqQDsSdFGevJMuXgiVJ5HtphV3xGE
