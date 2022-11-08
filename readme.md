@@ -54,10 +54,15 @@ Once each users get the unique url sent to them, on opening the url (`https://cv
     - Python
     - FastAPI
 
-## 2. Project 18 ( Weather Forecase App )
+## 2. Project 18 ( Rain When )
+
+A weather app for Nigeria. It does not tell you about temparature or other unneccessary info. It just tells you in a simple format if it will rain today or not, and what time it will start raining. So you know if to take umbrella
 
 Get weather data from a speific location. This project is basically `Frontend Heavy`. The only task here for backend dev is to create a `reverse proxy` as a wrapper for this API, which would be used to store sensitive data along the way, instead of storing this data in client.
 
+![image](https://cdn.dribbble.com/users/6400757/screenshots/16952894/media/5e1f109e23589152c1ff8098d96dd802.png)
+
+![image](https://cdn.dribbble.com/users/6259454/screenshots/17003404/media/6695237e281547ae9af43629d7849490.png)
 
 ### Technologies
 
@@ -107,4 +112,45 @@ Response
   "wind_direction": "N",
   "wind_degree": 10
 }
+```
+
+From the response gotten, we should be able to tell if it would rain or not.
+
+## 3. Project 19 ( Real Exchange Rate ) .
+Is it 410 per dollar or is it 820? How about in Columbia? An app that tells you real "street" exchange rate for every country.
+
+![image](https://cdn.dribbble.com/users/758684/screenshots/17714477/media/24121cdcaf0e18dddff751ee9812229e.jpg)
+
+![image](https://cdn.dribbble.com/userupload/3589607/file/original-701d39ad405f561a0fa73df66df85838.png)
+
+### Idea.
+We need to make this app look interactive and engaging. we could come up with an app that has an in-built google map, where users could search a country name with autocomplete feature.After completing the country name, we simply animate the google map to point to that address / country name. 
+
+Then at the bottom of the app, we display the exchange rate of that country name using the country code i.e ( `USD`, `NGN`, `CAD` ). we then this information, make a request to our api to provide us with current exchange rate based on the country code given. for example.
+
+```js
+GET https://www.freeforexapi.com/api/live?pairs=USDNGN
+
+Content-Type: application/json
+```
+
+Response
+```json
+{
+  "rates": {
+    "USDNGN": {
+      "rate": 439.759976,
+      "timestamp": 1667897103
+    }
+  },
+  "code": 200
+}
+```
+
+This api works differently. what you need to do, is specify the `To` and `From` country code.
+```js
+
+// TO=NGN
+// FROM=USD
+https://www.freeforexapi.com/api/live?pairs={TO}{FROM}
 ```

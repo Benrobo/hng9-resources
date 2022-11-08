@@ -1,0 +1,11 @@
+# POST https://api.m3o.com/v1/weather/Now
+# Content-Type: application/json
+# authorization: Bearer MTQ1MDhiYjItMzc4NC00ZjJhLTg5M2QtZDEwNjllNjg5NzA1
+
+# {
+#     "location": "105.112.176.46"
+# }
+
+GET https://www.freeforexapi.com/api/live?pairs=USDNGN
+
+Content-Type: application/json
