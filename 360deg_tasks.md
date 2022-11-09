@@ -17,6 +17,10 @@ Organization should be able to perform every sort of authentication (`Login` / `
 
 - Email
 - Password
+- Forget Pasword / Reset Password
+
+## Resetting Password..
+During this process, a different page would be available and a form for the user to pass in their email address fo password resetting.
 
 Once user authentication is successfull enough, we simply redirect them to dashboard. Company staff (`admin`) dashboard defer from the normal company organization staffs.
 
