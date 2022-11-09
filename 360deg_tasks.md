@@ -50,6 +50,8 @@ As stated earlier, the company admin dashboard defers from the regular staffs da
 
 Doing this simply does two things. ( 1 ). Stores the user info in database.  ( 2 ) generate a unqiue `URL` which is been sent to all staffs email address. The url could be something like this `https://axle.multiplex.com/evaluate/org_id/exp_id`. The `exp_id` is used to track if that link sent has expired or not. If the link has been expired, a Not found page shows up.
 
+If an unauthenticated staff opens this link, a signin form would be displayed for them to signin, else, they would be redirected to the assessment page.
+
 3. All Staff's :- This is a section where the admin could `manage` all registered staff within the system.. from `updating` users `permission` level to `deleting` / `removing` a specific user from the system.
 
 ![image](https://camo.githubusercontent.com/5b2dac4e6cb2ea4a20c632970fda46145a91e6922a59d48cc070a4836ae1b6ba/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f323231313139382f73637265656e73686f74732f31303837333234332f6d656469612f38646663383331316665363534633032636238376336343062353333313036312e706e673f)
