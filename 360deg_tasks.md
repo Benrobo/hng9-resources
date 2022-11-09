@@ -70,3 +70,4 @@ Doing this simply does two things. ( 1 ). Stores the user info in database.  ( 2
 ![image](https://cdn.dribbble.com/users/2173663/screenshots/17219796/media/62eb4591f7d91e5c7ca6d7abf5d4c891.jpg)
 
 
+... More Info would be added later on, Keep an eye on this file.
