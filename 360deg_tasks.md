@@ -76,4 +76,9 @@ If an unauthenticated staff opens this link, a signin form would be displayed fo
 ![image](https://cdn.dribbble.com/users/2173663/screenshots/17219796/media/62eb4591f7d91e5c7ca6d7abf5d4c891.jpg)
 
 
+> Some useful update...
+
+Admin of the system has the feature to add employees to a specific space.. if they want some certain numbers of employees to be in a specific space , this can be done also..
+
+
 ... More Info would be added later on, Keep an eye on this file.
