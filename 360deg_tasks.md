@@ -83,13 +83,12 @@ Admin of the system has the feature to add employees to a specific space.. if th
 
 ## App Architecture
 
-![image]()
-
+![image](https://github.com/Benrobo/hng9-resources/blob/main/architecture.png?raw=true)
 
 ## Database Design Schema 
-> Still under update
+> Still under development
 
-![image]()
+![image](https://github.com/Benrobo/hng9-resources/blob/main/db_design.png?raw=true)
 
 
 
