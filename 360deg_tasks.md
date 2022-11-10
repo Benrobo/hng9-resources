@@ -2,14 +2,14 @@
 
 # Authentication / Authorization.
 
-Organization should be able to perform every sort of authentication (`Login` / `Signup`). On registering, each user who signedup as an organization, would be given a unique dashboard from regular users. But before this process, the organization would get a `Email` verification code. This process is to prevent other malicious users from registering in behalf of the user credentials.
+User should be able to perform every sort of authentication (`Login` / `Signup`). On registering, each user who signedup as an organization, would be given a unique dashboard from regular staff. But before this process, the user would get a `Email` verification code. This process is to prevent other malicious users from registering in behalf of the user credentials.
 
 ## Signup Info Needed..
 
-- Full Name.
-- Email ( users email address ).
+- Email ( user email address ).
 - Username.
 - Company Name.
+- Company Email
 - Password.
 - Confirm Password.
 
