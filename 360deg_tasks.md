@@ -94,7 +94,7 @@ Admin of the system has the feature to add employees to a specific space.. if th
 
 Database Architecture was constructed using the link [Database Architecture](https://dbdiagram.io/d/636cce5fc9abfc611171a876)
 
-![image](https://github.com/Benrobo/hng9-resources/blob/main/db_design.png?raw=true)
+![image](https://github.com/Benrobo/hng9-resources/blob/main/Copy%20of%20360deg%20Evaluator%20(1).png?raw=true)
 
 
 
