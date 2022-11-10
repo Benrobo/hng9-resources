@@ -81,4 +81,16 @@ If an unauthenticated staff opens this link, a signin form would be displayed fo
 Admin of the system has the feature to add employees to a specific space.. if they want some certain numbers of employees to be in a specific space , this can be done also..
 
 
+## App Architecture
+
+![image]()
+
+
+## Database Design Schema 
+> Still under update
+
+![image]()
+
+
+
 ... More Info would be added later on, Keep an eye on this file.
