@@ -78,7 +78,7 @@ Admin of the system has the feature to add employees to a specific space.. if th
 
 ## App Workflow
 
-![image](https://github.com/Benrobo/hng9-resources/blob/main/architect.png?raw=true)
+![image](https://github.com/Benrobo/hng9-resources/blob/main/appflow-2.png?raw=true)
 
 ## Database Design Schema 
 > Still under development
