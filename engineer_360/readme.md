@@ -38,7 +38,7 @@ Engineering Team 360° skill evaluator. This is for companies that want to know 
 ## Create an Account
 
 > REQUEST
-```js
+```sh
 curl --location --request POST '/api/v1/auth/register' \
 --data-raw '{
 	"first_name": "Dev",
@@ -52,7 +52,7 @@ curl --location --request POST '/api/v1/auth/register' \
 
 > RESPONSE
 
-```js
+```json
 {
   "error": false,
   "message": "Acount created successfully",
@@ -71,7 +71,7 @@ curl --location --request POST '/api/v1/auth/register' \
 ## Add Employee
 
 > REQUEST
-```js
+```sh
 curl --location --request POST '/api/v1/employee/add' \
 --header 'Authorization: Bearer <JWT_TOKEN>' \
 --header 'Content-Type: application/json' \
@@ -85,7 +85,7 @@ curl --location --request POST '/api/v1/employee/add' \
 
 > RESPONSE
 
-```js
+```json
 {
   "error": false,
   "message": "Employee added successfully",
@@ -102,7 +102,7 @@ curl --location --request POST '/api/v1/employee/add' \
 ## Get Assessments
 
 > REQUEST
-```js
+```sh
 curl --location --request GET '/api/v1/assessments/get' \
 --header 'Authorization: Bearer <JWT_TOKEN>' \
 --header 'Content-Type: application/javascript' \
@@ -110,7 +110,7 @@ curl --location --request GET '/api/v1/assessments/get' \
 
 > RESPONSE
 
-```js
+```json
 {
   "error": false,
   "message": "Assessments fetched successfully",
