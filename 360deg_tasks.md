@@ -88,5 +88,29 @@ Database Architecture was constructed using the link [Database Architecture](htt
 ![image](https://github.com/Benrobo/hng9-resources/blob/main/db_design.png?raw=true)
 
 
+# API ROUTES
+
+```js
+
+    // Authentication
+    
+    // register
+    POST /api/v1/auth/register
+    
+    // login
+    POST /api/v1/auth/login
+
+    // Assessments
+    
+    // create assessment
+    POST /api/v1/assessments/create
+    
+    // get assessments
+    POST /api/v1/assessments/get
+    
+    // add staff to assessments
+    POST /api/v1/assessments/add
+
+```
 
 ... More Info would be added later on, Keep an eye on this file.
