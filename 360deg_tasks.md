@@ -113,4 +113,83 @@ Database Architecture was constructed using the link [Database Architecture](htt
 
 ```
 
+
+#### 1. General Trivia Questions
+
+```js
+GET /api/v1/questions?limit=20
+```
+
+Response
+
+```json
+[
+  {
+    "category": "PHP",
+    "id": "622a1c367cc59eab6f9500ff",
+    "correctAnswer": "Hermes",
+    "incorrectAnswers": [
+      "Apollo",
+      "Dionysus",
+      "Hades"
+    ],
+    "question": "Who is the Greek equivalent of the Roman god Mercury?",
+    "tags": [
+      "society_and_culture"
+    ],
+    "type": "Multiple Choice",
+    "difficulty": "hard",
+    "regions": [
+      
+    ]
+  },
+  ......
+]
+```
+
+Technical Questions ( Developer )
+
+```js
+GET https://quizapi.io/api/v1/questions?apiKey=mFjwtPODO2nHqQDsSdFGevJMuXgiVJ5HtphV3xGE
+```
+
+Response
+
+```json
+{
+    "id": 80,
+    "question": "How do you create an array in PHP?",
+    "description": null,
+    "answers": {
+      "answer_a": "$cars = \"Volvo\", \"BMW\", \"Toyota\";",
+      "answer_b": "$cars = newarray(\"Volvo\", \"BMW\", \"Toyota\");",
+      "answer_c": "$cars = array[\"Volvo\", \"BMW\", \"Toyota\"];",
+      "answer_d": "$cars = array(\"Volvo\", \"BMW\", \"Toyota\");",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_d",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "",
+    "difficulty": "Medium"
+},....
+```
+
+
+
 ... More Info would be added later on, Keep an eye on this file.
