@@ -7,6 +7,14 @@ Engineering Team 360° skill evaluator. This is for companies that want to know 
 
 # App Features
 
+- Authentication / Authorization.
+- Adding of employees.
+- Creating of Assessments of various categories.
+- Creating of Assessmentsestions.
+- Assigning employees to a specific assessments.
+- Visualization of assessments scores using `Spider Web Chart`.
+
+
 
 ## Authentication / Authorization.
 
@@ -56,8 +64,8 @@ As stated earlier, the company admin dashboard defers from the regular staffs da
 
 2. Add Staff's :- This is a section where the admin could add other members of staff using `2` different methods..
 
-    a. Add company staff members to the system using a `form` components that contains the following fields ( `Email`, `Question_Category`, `Full Name`, `Username` ).
-    b. A section where admin could upload a `CSV` file having the following fields ( `Email`, `Question_Category`, `Full Name`, `Username` ). along with all staff data / info.
+    a. Add company staff members to the system using a `form` components that contains the following fields ( `Email`, `Full Name`, `Username` ).
+    b. A section where admin could upload a `CSV` file having the following fields ( `Email`, `Full Name`, `Username` ). along with all staff data / info.
 
 Doing this simply does two things :
 1. Stores the user info in database.  
